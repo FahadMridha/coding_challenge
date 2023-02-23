@@ -40,7 +40,7 @@ const Problem1 = () => {
     // console.log(show);
   };
 
-  //form submitation
+  //form handler
   const handlerSubmit = (event) => {
     event.preventDefault();
     const form = event.target;
@@ -53,8 +53,6 @@ const Problem1 = () => {
       { name, status },
     ]);
     setShowInformation(filtaredTask);
-    // localStorage.setItem("task", JSON.stringify(showInformation));
-    // console.log(information);
     form.reset();
   };
 
